@@ -75,6 +75,13 @@ class _HomepageState extends State<Homepage> {
                 style: TextStyle(color: Colors.white),
               ),
             ),
+            ListTile(
+              leading: Icon(Icons.logout_sharp, color: Colors.white),
+              title: Text(
+                "Logout",
+                style: TextStyle(color: Colors.white),
+              ),
+            )
           ],
         ),
       ),
