@@ -33,20 +33,27 @@ class ShoeTile extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  Text(shoe.name),
-                  Text(shoe.price),
+                  Text(
+                    shoe.name,
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  const SizedBox(height: 5),
+                  Text(
+                    '\₹' + shoe.price,
+                    style: TextStyle(color: Colors.grey),
+                  ),
                 ],
               ),
               Container(
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
+                padding: const EdgeInsets.all(20),
+                decoration: const BoxDecoration(
                   color: Colors.black,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     bottomRight: Radius.circular(10),
                   ),
                 ),
-                child: Icon(
+                child: const Icon(
                   Icons.add,
                   color: Colors.white,
                 ),

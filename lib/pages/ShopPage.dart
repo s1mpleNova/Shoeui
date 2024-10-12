@@ -66,13 +66,19 @@ class _ShopPageState extends State<ShopPage> {
             itemBuilder: (context, index) {
               Shoe shoe = Shoe(
                   name: 'air jordan',
-                  price: '₹3000',
+                  price: '3000',
                   imagePath: 'lib/images/img.jpg',
                   description: "comfort fit");
               return ShoeTile(shoe: shoe);
             },
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+          child: Divider(
+            color: Colors.white,
+          ),
+        )
       ],
     );
   }
